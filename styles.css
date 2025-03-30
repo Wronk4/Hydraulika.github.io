@@ -175,16 +175,36 @@ nav a.contact-btn {
     border-radius: 10px;
   }
   
-  @media (max-width: 768px) {
 
+  @media (max-width: 768px) {
     .hero-logos {
-      flex: 1 1 auto;
-      margin-left: auto;
-      margin-top: 20px; 
-      gap: 60px;
-      margin-right: auto;
-      margin-bottom: 0;
-  
+      /* Reset the flex and margin properties */
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-right: 0;
+      
+      /* Center the grid container itself */
+      width: 100%;
+      justify-content: center;
+      
+      /* Maintain the 2-column grid but with proper spacing */
+      grid-template-columns: repeat(2, minmax(100px, 150px));
+      gap: 20px;
+      
+      /* Add some top margin for separation from text */
+      margin-top: 30px;
+    }
+    
+    /* Center the grid container in the parent */
+    .hero-container {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ensure text is full width before logos */
+    .hero-text {
+      flex: 1 1 100%;
+      width: 100%;
     }
   }
   
