@@ -10,6 +10,12 @@
     color: #333;
   }
   
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
   /* Header */
 header {
   background-color: #E1E1E1;
@@ -45,6 +51,7 @@ header {
   font-weight: bold;
   /* Zapobiegnie dzieleniu nazwy na kilka linii (jeśli jest bardzo długa) */
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Jedyny link w nav (przycisk Kontakt) */
